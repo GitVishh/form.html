@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> User Registration Form:</title>
+</head> 
+<body>
+    <h1> User Registration Form </h1>
+    <hr><p><b></p><s>this is to inform that this user information is only valid for a paticular time</s> </b></p></hr>
+    <form action ="/submit" method="post">
+
+        <hr><label for="Name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full your name" required><br><br></hr>
+        
+        <hr><label for="Email">Email:</label>
+        <input type="text" id="Email" name="Email" placeholder="Enter your Email" required><br><br></hr>
+
+        <hr><label for="Phone number">Phone number:</label>
+        <input type="number" id="Phone number" name="Phone number" placeholder="Enter your number" required><br><br></hr>
+
+        <hr><label for="Password">Password:</label>
+        <input type="text" id="Password" name="Password" placeholder="Enter your Password " required><br><br></hr>
+
+        <hr><label for=" Confirm Password"> Confirm Password:</label>
+        <input type="text" id="Confirm Password" name="Confirm Password" placeholder="Enter your Confirm Password " required><br><br></hr>
+        
+        <hr><label for="portfolio">Upload Portfolio:</label><br>
+        <input type="file" id="portfolio" name="portfolio" accept=".pdf,.doc,.docx,.jpg,.png"><br><br></hr>
+    
+
+
+        
+        <label for="gender">Gender:</label><br>
+        <select id="gender" name="gender" required>
+            <option value="" disabled selected>Select your gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <label for=" Birthdate"> Birthdate:</label>
+        <input type="test" id="Birthdate" name="Birthdate" placeholder="Enter your Birthdate " required><br><br><hr>
+
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the <a href="/terms" target="_blank">terms and conditions</a>.</label><br><br>
+        <!--submit button-->
+        <div style="border: 1px solid #ccc; padding: 10px; height: 200px; overflow-y: scroll; margin-top: 10px;">
+            <h3>Terms and Conditions</h3>
+            <p>Welcome to our platform! By accessing or using our services, you agree to the following terms...</p>
+            <p>[Add your full terms and conditions text here]</p>
+        </div><br>
+        
+        
+        <fieldset>
+            <legend>Payment Options:</legend>
+            <label>
+                <input type="radio" name="payment_method" value="card" required> Credit/Debit Card
+            </label><br>
+            <label>
+                <input type="radio" name="payment_method" value="upi" required> UPI (Unified Payments Interface)
+            </label><br>
+            <label>
+                <input type="radio" name="payment_method" value="paypal" required> PayPal
+            </label><br><br>
+        </fieldset>
+
+        <!-- Card Details Section (Optional, Visible Only If Card Selected) -->
+        <div id="card-details" style="display: none;">
+            <label for="card-number">Card Number:</label><br>
+            <input type="text" id="card-number" name="card_number" placeholder="Enter your card number"><br><br>
+
+            <label for="expiry-date">Expiry Date:</label><br>
+            <input type="month" id="expiry-date" name="expiry_date"><br><br>
+
+            <label for="cvv">CVV:</label><br>
+            <input type="text" id="cvv" name="cvv" placeholder="Enter CVV"><br><br>
+        </div>
+            <button type ="Submit">Submit</button>
+
+            <label for="captcha-input">captcha: what is 29+76</label><br>
+        <span class="captcha" id="29-30"></span><br>
+        <input type="text" id="29-30" name="captcha" placeholder="Enter the result" required><br><br>
+    </form>
+    
+</body>
+</html>
